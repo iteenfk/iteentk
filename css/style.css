@@ -3,53 +3,40 @@
     margin: 0;
 }
 
-main{
-    width: 380px;
-    margin: 24px auto 0;
-    box-shadow: 0 0 8px gray;
-    border-radius: 8px;
-    padding: 16px;
+
+main {
+    width: 256px;
+    margin: 0 auto;
 }
 
-p{
-    margin: 0;
-    border: 1px solid gray;
-    border-radius: 4px;
-    font-family: "Courier New";
-    font-size: 24px;
-    text-align: center;
-    padding: 12px 0;
+img {
+    vertical-align: bottom;
+    background-color: blue;
+    border-radius: 20px;
 }
 
-button{
+.container {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+}
+
+button {
     all: unset;
-    width: 100%;
-    background: blue;
-    border-radius: 8px;
-    color: white;
+    width: 124px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
     text-align: center;
-    padding: 12px 0;
-    margin-top: 16px;
+    padding: 4px 0;
     cursor: pointer;
 }
 
-button:hover{
-    opacity: .6;
-}
-
-button:active{
+.thumbnail {
+    cursor: pointer;
     opacity: .4;
 }
 
-fieldset{
-    border: 1px dashed blue;
-    border-radius: 8px;
-    padding: 16px;
-    margin-top: 16px;
-    display: flex;
-    justify-content: space-between;
-}
-
-legend{
-    padding: 0 8px;
+.active {
+    opacity: 1;
 }

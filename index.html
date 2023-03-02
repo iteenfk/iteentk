@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>パスワードジェネレーター</title>
+    <title>スライドショー</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <main>
-        <p id="result">aaalllrrr</p>
-        <button id="btn">パスワード生成</button>
-        <fieldset>
-            <legend>オプション</legend>
-            <label>
-                長さ(<span id="passward-length">8</span>)
-                <input type="range" id="slider" min="8" max="24" value="8">
-            </label>
-            <label>
-                数字
-                <input type="checkbox" id="numbers-checkbox">
-            </label>
-            <label>
-                記号
-                <input type="checkbox" id="symbols-checkbox">
-            </label>
-        </fieldset>
+        <img src="img/pic0.png" width="256" height="192" id="main-image">
+        <div class="container">
+            <button id="prev">←</button>
+            <button id="next">→</button>
+        </div>
+
+        <div class="container">
+            <img src="img/pic0.png" width="80" height="60" class="thumbnail active">
+            <img src="img/pic1.png" width="80" height="60" class="thumbnail">
+            <img src="img/pic2.png" width="80" height="60" class="thumbnail">
+        </div>
     </main>
+
     <script src="js/main.js"></script>
 </body>
 </html>
